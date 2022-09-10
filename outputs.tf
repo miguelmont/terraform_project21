@@ -9,7 +9,7 @@ output "server1-private-ip" {
 }
 
 output "server1-publicIP" {
-  value = aws_instance.server1.public_ip
+  value = aws_eip.eip-server1.public_ip
 }
 
 output "instances_id"{
